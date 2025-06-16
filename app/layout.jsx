@@ -1,15 +1,17 @@
-import { Space_Grotesk } from "next/font/google";
-import AnimationWrapper from "@/components/AnimationWrapper";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Outfit } from "next/font/google";
+
+import { AuthProvider } from "@/context/AuthContext";
+import AnimationWrapper from "@/components/animation-wrapper";
+import Navbar from "@/components/navbar";
+import { Sidebar, SidebarProvider } from "@/components/ui/sidebar";
+import AppSidebar from "@/components/sidebar";
 import config from "@/config";
 import "@/css/globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
 });
-
 
 export const metadata = {
   metadataBase: new URL(config.url),
@@ -72,18 +74,25 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} antialiased`}
+        className={`${outfit.className} dark antialiased`}
       >
-        <Header />
-        <AnimationWrapper>
-          {children}
-        </AnimationWrapper>
-        <Footer />
+        <SidebarProvider>
+          <Sidebar>
+            <AppSidebar />
+          </Sidebar>
+          <main>
+            <Navbar />
+            <AnimationWrapper>
+              <AuthProvider>
+                {children}
+              </AuthProvider>
+            </AnimationWrapper>
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );

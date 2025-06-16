@@ -1,7 +1,0 @@
-@import "./globals.css";
-
-@layer components {
-  .link-button {
-    @apply inline-block;
-  }
-}

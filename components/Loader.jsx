@@ -1,5 +1,5 @@
 
-import "@/css/Loader.css";
+import "@/css/loader.css";
 
 export default function Loader() {
   return (

@@ -36,7 +36,6 @@ function withConfetti(WrappedComponent) {
             left: 0,
           }}
         />
-
         <WrappedComponent {...props} triggerConfetti={triggerConfetti} />
       </>
     );

@@ -2,7 +2,7 @@
 
 import { FaInfoCircle } from "react-icons/fa";
 import { useId } from "react";
-import "@/css/Tooltip.css";
+import "@/css/tooltip.css";
 
 export default function Tooltip({
   icon,
