@@ -1,10 +1,5 @@
 import { Outfit } from "next/font/google";
 
-import { AuthProvider } from "@/context/AuthContext";
-import AnimationWrapper from "@/components/animation-wrapper";
-import Navbar from "@/components/navbar";
-import { Sidebar, SidebarProvider } from "@/components/ui/sidebar";
-import AppSidebar from "@/components/sidebar";
 import config from "@/config";
 import "@/css/globals.css";
 
@@ -80,19 +75,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className} dark antialiased`}
       >
-        <SidebarProvider>
-          <Sidebar>
-            <AppSidebar />
-          </Sidebar>
-          <main>
-            <Navbar />
-            <AnimationWrapper>
-              <AuthProvider>
-                {children}
-              </AuthProvider>
-            </AnimationWrapper>
-          </main>
-        </SidebarProvider>
+        {children}
       </body>
     </html>
   );
