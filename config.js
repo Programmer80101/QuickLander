@@ -1,15 +1,17 @@
-const url = "https://sparksight.vercel.app";
+const url = "https://quicklander.vercel.app";
 
 const config = {
-  name: "SparkSight",
-  abbr: "SS",
-  id: "spark-sight",
-  description: "SS",
+  name: "QuickLander",
+  abbr: "QL",
+  id: "quick-lander",
+  description: "Collection of landing pages!",
   url: url,
   author: "Surprized Pikachu",
   themeColor: "#202020",
   gtag: "G-",
   adsense: "",
+  hideNavbarPaths: ["/auth"],
+  hideFooterPaths: ["/auth"],
   socials: {
     github: "",
     youtube: "",
@@ -27,11 +29,7 @@ const config = {
     cardWidth: 1200,
     cardHeight: 628,
   },
-  keywords: [
-    "clash royale minigame",
-    "clash royale games",
-    "clash royale card guessing game",
-  ],
+  keywords: ["landing pages", "landing page"],
 };
 
 export default config;
