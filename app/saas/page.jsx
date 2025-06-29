@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Hero from "./hero";
 import Features from "./features";
 import Testimonials from "./testimonials";
+import FAQ from "./faq";
+import Footer from "./footer";
 import "./page.css";
 
 export default function Saas() {
@@ -13,6 +15,8 @@ export default function Saas() {
         <Hero />
         <Features />
         <Testimonials />
+        <FAQ />
+        <Footer />
       </AnimationWrapper>
     </>
   )

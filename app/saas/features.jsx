@@ -11,7 +11,7 @@ const features = [
   {
     icon: <Gift />,
     title: 'Rewards Program',
-    description: 'Earn credits for every action—whether it’s onboarding a new user, making your first sale, or referring a friend—and redeem them easily as discounts, freebies, or exclusive perks to keep growing your business.',
+    description: 'Earn credits for every action—whether it\'s onboarding a new user, making your first sale, or referring a friend—and redeem them easily as discounts, freebies, or exclusive perks to keep growing your business.',
   },
   {
     icon: <DollarSign />,
@@ -42,14 +42,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-8 relative z-1">
+    <section className="py-9 relative z-1">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-6">Key Features</h2>
+        <h2 className="mb-5">Key Features</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="bg-neutral-300/25 p-4 rounded-md shadow-xl hover:inset-shadow-green-500/15 inset-shadow-sm transition-all duration-400 ease-in"
+              className="bg-neutral-300/25 p-5 rounded-md shadow-xl hover:bg-neutral-350/25 hover:-translate-y-1 hover:scale-102 inset-shadow-sm transition-all duration-300 ease-out"
             >
               <h4 className="flex flex-row gap-3">
                 <span className="text-green-500 scale-110 origin-top-left">

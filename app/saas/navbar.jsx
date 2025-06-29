@@ -8,7 +8,7 @@ export default function Navbar() {
   const path = usePathname();
 
   return (
-    <div className="fixed z-100 top-0 left-0 w-full p-2 flex flex-row justify-between bg-neutral-400/35 backdrop-blur-[30px]">
+    <div className="fixed z-100 top-0 left-0 w-full p-2 flex flex-row justify-between bg-neutral-300/25 backdrop-blur-sm">
       <Button
         className="grid items-center text-xl h-full py-1.5"
         variant="ghost"
